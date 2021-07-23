@@ -31,8 +31,8 @@
     $word = '';
     if ( isset ( $_GET ['word'] )){
         $word = $_GET ['word'];
-        $word = ucwords( strtolower( $word ));
-        foreach ( $arrayWord as $x => $value){
+        $word = ucwords ( strtolower ( $word ));
+        foreach ( $arrayWord as $x => $value) {
             if($x == $word) echo "It's word is mean : " . $value;
         }
     }
