@@ -47,14 +47,11 @@ $customer = [
         <tbody>
         ';
     foreach ( $customer as $value) {
-        echo "
-            <tr>
-                <td> $value[0]</td>
-                <td> $value[1]</td>
-                <td> $value[2]</td>
-                <td> $value[3]</td>
-                <td> $value[4]</td>
-            </tr>";
+        echo "<tr>";
+        foreach ( $value as $v) {
+            echo "<td>$v</td>";
+        }
+        echo "</tr>";
     }
     echo "</tbody>
         </table>";
